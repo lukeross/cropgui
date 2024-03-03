@@ -1,12 +1,36 @@
-cropgui (0.6~pre0) UNRELEASED; urgency=medium
+cropgui (0.7) bookworm; urgency=medium
 
-  * Pre-tag the next release
+  * Allow fine-tuning of cropping area using keyboard
+  * use the rule of thirds and the directory of the previously chosen file
+  * Stop using get_primary_monitor()
+  * Keep every type of drag within the image bounds
+  * show how the current ratio differs from the closest popular format
+  * Replace Image.ANTIALIAS which was removed in Pillow 10
+  * Fix not being able to include last row and column
+  * Remove thumbnail from cropped image
+  * Fix error due to Image.Resampling missing in PIL < 9.1
+  * fix cropping of palette images
+
+ -- Jeff Epler <jepler@unpythonic.net>  Mon, 02 Oct 2023 18:35:00 -0500
+
+cropgui (0.6) buster; urgency=medium
+
+  * Fix output name detection for non-jpeg files
+  * Fix cropping in python3
+  * Updates of possible interest
+  * Work around jpegtran to get correct rotated crops
+  * Preserve previous crop
+  * Minor improvements
+  * Treat MPO files like JPEG files
+  * Ensure only integers are passed to Image.point
 
  -- Jeff Epler <jepler@unpythonic.net>  Mon, 19 Apr 2021 07:48:04 -0500
 
 cropgui (0.5) buster; urgency=medium
 
-  * Tag a new release to help packagers
+  * Fix rounding of crop boundaries to JPEG DCT (thanks @jingw)
+  * Code quality improvements (thanks @jingw)
+  * Fix installation script and debian packaging (thanks @spvkgn)
 
  -- Jeff Epler <jepler@unpythonic.net>  Mon, 19 Apr 2021 07:44:06 -0500
 
