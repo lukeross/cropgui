@@ -1,3 +1,11 @@
+cropgui (0.8~git20240415) UNRELEASED; urgency=medium
+
+  * Add an option to ensure edges are on iMCU boundaries
+  * Don't allow keyboard commands to move the crop region into empty space
+  * Fix misspellings of iMCU
+
+ -- Luke Ross <luke@lukeross.uk>  Sat, 20 Apr 2023 09:11:00 +0100
+
 cropgui (0.7) bookworm; urgency=medium
 
   * Allow fine-tuning of cropping area using keyboard
@@ -28,9 +36,9 @@ cropgui (0.6) buster; urgency=medium
 
 cropgui (0.5) buster; urgency=medium
 
-  * Fix rounding of crop boundaries to JPEG DCT (thanks @jingw)
-  * Code quality improvements (thanks @jingw)
-  * Fix installation script and debian packaging (thanks @spvkgn)
+  * Fix rounding of crop boundaries to JPEG DCT
+  * Code quality improvements
+  * Fix installation script and debian packaging
 
  -- Jeff Epler <jepler@unpythonic.net>  Mon, 19 Apr 2021 07:44:06 -0500
 
