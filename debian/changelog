@@ -1,10 +1,17 @@
-cropgui (0.8~git20240415) UNRELEASED; urgency=medium
+cropgui (0.9~git20240611) UNRELEASED; urgency=medium
 
-  * Add an option to ensure edges are on iMCU boundaries
-  * Don't allow keyboard commands to move the crop region into empty space
-  * Fix misspellings of iMCU
+  * Avoid deprecated get_pointer
+  * Remove use of deprecated imghdr
 
- -- Luke Ross <luke@lukeross.uk>  Sat, 20 Apr 2023 09:11:00 +0100
+ -- Luke Ross <luke@lukeross.uk>  Tue, 11 Jun 2024 08:06:00 +0100
+
+cropgui (0.8) bookworm; urgency=medium
+
+  * Implement a command-line option to force JPEG bottom and right edges to be on iMCU boundaries. by @Ndolam in #116
+  * Implement a "poor man's" zoom feature. (The image gets bigger and sm… by @Ndolam in #118
+  * Properly parse the commandline with argparse by @jepler in #120
+
+ -- Jeff Epler <jepler@unpythonic.net>  Fri, 07 Jun 2024 22:36:00 -0500
 
 cropgui (0.7) bookworm; urgency=medium
 
